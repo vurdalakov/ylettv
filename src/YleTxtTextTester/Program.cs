@@ -14,7 +14,7 @@
             String applicationName = parts[0];
             String applicationVersion = parts[1].Split('=')[1];
 
-            Console.WriteLine("{0} {1} - YLE Texti TV text tester\n(c) 2013 Vurdalakov - http://ylettv.xxx.com\n", applicationName, applicationVersion);
+            Console.WriteLine("{0} {1} - YLE Texti TV text tester\n(c) 2013 Vurdalakov - https://github.com/vurdalakov/ylettv\n", applicationName, applicationVersion);
 
             if (0 == args.Length)
             {

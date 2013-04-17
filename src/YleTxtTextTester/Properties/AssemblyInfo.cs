@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("YleTxtTextTester")]
-[assembly: AssemblyDescription("YLE Texti TV text tester - lettv.xxx.com")]
+[assembly: AssemblyDescription("YLE Texti TV text tester - https://github.com/vurdalakov/ylettv")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Vurdalakov")]
 [assembly: AssemblyProduct("YleTxtTextTester")]
