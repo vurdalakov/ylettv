@@ -158,6 +158,8 @@ namespace Vurdalakov.YleTtv
 
         private String ToPlainText(String text)
         {
+            text = RemoveCodes1(text);
+
             while (true)
             {
                 int i1 = text.IndexOf("[g");
@@ -191,6 +193,18 @@ namespace Vurdalakov.YleTtv
             }
 
             return RemoveCodes(text).PadRight(40);
+        }
+
+        private String RemoveCodes1(String text)
+        {
+            String[] codes = { "[null]", "[flas]", "[stea]", "[ebox]", "[sbox]", "[nhei]", "[dhei]", "[so]", "[si]", "[dle]", "[cdis]", "[cgra]", "[sgra]", "[esc]", "[bbgr]", "[nbgr]", "[hgra]", "[rgra]", "[tbox]" };
+
+            foreach (String code in codes)
+            {
+                text = text.Replace(code, " ");
+            }
+
+            return text;
         }
 
         private String RemoveCodes(String text)
